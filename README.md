@@ -31,3 +31,22 @@ CPU :i7-7700HQ
 macOS Sierra 10.12.6
 
 macOS High Sierra 10.13 （**亮度调节失效**）
+
+----[ 截图 (流量警告) ]--------------------
+
+![假装它还在](https://github.com/Erf172/Lenovo_XiaoXin_Rui7000_Hackintosh/blob/10.12/Pictures/Screenshots1.png)
+
+![假装它还在](https://github.com/Erf172/Lenovo_XiaoXin_Rui7000_Hackintosh/blob/10.12/Pictures/Screenshots2.png)
+
+![假装它还在](https://github.com/Erf172/Lenovo_XiaoXin_Rui7000_Hackintosh/blob/10.12/Pictures/Screenshots3.png)
+
+![假装它还在](https://github.com/Erf172/Lenovo_XiaoXin_Rui7000_Hackintosh/blob/10.12/Pictures/Screenshots4.png)
+
+![假装它还在](https://github.com/Erf172/Lenovo_XiaoXin_Rui7000_Hackintosh/blob/10.12/Pictures/Screenshots5.png)
+
+![假装它还在](https://github.com/Erf172/Lenovo_XiaoXin_Rui7000_Hackintosh/blob/10.12/Pictures/Screenshots6.png)
+
+![假装它还在](https://github.com/Erf172/Lenovo_XiaoXin_Rui7000_Hackintosh/blob/10.12/Pictures/Screenshots7.png)
+
+![假装它还在](https://github.com/Erf172/Lenovo_XiaoXin_Rui7000_Hackintosh/blob/10.12/Pictures/Screenshots8.png)
+
