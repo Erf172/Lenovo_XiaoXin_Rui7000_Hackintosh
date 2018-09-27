@@ -16,6 +16,8 @@
 			<dict>
 				<key>AddHDMI</key>
 				<false/>
+				<key>AddPNLF</key>
+				<true/>
 				<key>Comment-IRQ Fix</key>
 				<string>The following fixes may be needed for onboard audio/USB/etc</string>
 				<key>FixHPET</key>
@@ -1022,6 +1024,26 @@
 				<key>Replace</key>
 				<data>
 				AQUJAAAIAACHAQAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Comment: 0x591B0000 Connector Patch by FB-Patcher (credit headkaze)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AAAIAAIAAACYAAAAAgQKAAAIAACHAQAAAwYKAAAEAACH
+				AQAA/wAAAAEAAAAgAAAA
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>kext name</string>
+				<key>Replace</key>
+				<data>
+				AAAIAAIAAACYAAAAAgQKAAAIAACHAQAAAwYKAAAIAACH
+				AQAA/wAAAAEAAAAgAAAA
 				</data>
 			</dict>
 		</array>
