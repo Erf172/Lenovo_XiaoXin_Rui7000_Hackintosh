@@ -54,8 +54,7 @@ macOS High Sierra 10.13 （**将CLOVER/kexts/Other/AppleBacklightInjector.kext�
 
 1.   9.27  更新了一下Clover版本(没错，为10.14做准备)
 
-2.   9.30  修复了蓝牙的问题(确切说是发现自己脑残放错驱动了......)
-
+2.   9.30  修复了蓝牙的问题(确切说是发现自己脑残放错驱动了......)<br>
            加上了ApfsDriverLoader-64.efi，可以引导APFS分区
 
 
