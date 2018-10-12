@@ -14,8 +14,6 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>AddHDMI</key>
-				<false/>
 				<key>AddPNLF</key>
 				<true/>
 				<key>Comment-IRQ Fix</key>
@@ -33,133 +31,49 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					T1NJRA==
-					</data>
-					<key>Replace</key>
-					<data>
-					WFNJRA==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change _OSI to XOSI</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					X09TSQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WE9TSQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change _DSM to XDSM</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					X0RTTQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WERTTQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change EC0 to EC</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					RUMwXw==
-					</data>
-					<key>Replace</key>
-					<data>
-					RUNfXw==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change H_EC to EC</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					SF9FQw==
-					</data>
-					<key>Replace</key>
-					<data>
-					RUNfXw==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change ECDV to EC</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					RUNEVg==
-					</data>
-					<key>Replace</key>
-					<data>
-					RUNfXw==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change HDAS to HDEF</string>
+					<string>change EHC1 to EH01</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					SERBUw==
+					RUhDMQ==
 					</data>
 					<key>Replace</key>
 					<data>
-					SERFRg==
+					RUgwMQ==
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change HECI to IMEI</string>
+					<string>change EHC2 to EH02</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					SEVDSQ==
+					RUhDMg==
 					</data>
 					<key>Replace</key>
 					<data>
-					SU1FSQ==
+					RUgwMg==
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change MEI to IMEI</string>
+					<string> change XHCI to XHC</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					TUVJXw==
+					WEhDSQ==
 					</data>
 					<key>Replace</key>
 					<data>
-					SU1FSQ==
+					WEhDXw==
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change GFX0 to IGPU</string>
+					<string>change GFX0 to IGPU, optionally pair with SSDT-IGPU.aml</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -173,30 +87,30 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change PCI0.VID to IGPU #1 (Thinkpad)</string>
+					<string>change _DSM to XDSM</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					UENJMFZJRF8=
+					X0RTTQ==
 					</data>
 					<key>Replace</key>
 					<data>
-					UENJMElHUFU=
+					WERTTQ==
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change PCI0.VID to IGPU #2 (Thinkpad)</string>
+					<string>change _OSI to XOSI, pair with SSDT-XOSI.aml</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					VklEXwhfQURSDAAAAgA=
+					X09TSQ==
 					</data>
 					<key>Replace</key>
 					<data>
-					SUdQVQhfQURSDAAAAgA=
+					WE9TSQ==
 					</data>
 				</dict>
 			</array>
@@ -244,7 +158,7 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>arch=x86_64 dart=0 nv_disable=1 kext-dev-mode=1 -disablegfxfirmware</string>
+		<string>nv_disable=1 dart=0 -cdfon arch=x86_64</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>
@@ -263,178 +177,62 @@
 	<string>This file is for 10.12.6+ with native KabyLake support</string>
 	<key>Devices</key>
 	<dict>
-		<key>#AddProperties</key>
-		<array>
+		<key>Properties</key>
+		<dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
-				<key>Comment</key>
-				<string>hda-gfx=onboard-1 for HDMI audio</string>
-				<key>Device</key>
-				<string>IntelGFX</string>
-				<key>Key</key>
-				<string>hda-gfx</string>
-				<key>Value</key>
+				<key>layout-id</key>
 				<data>
-				b25ib2FyZC0xAA==
+				HAAAAA==
 				</data>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
-				<key>Comment</key>
-				<string>hda-gfx=onboard-1 for HDMI audio</string>
-				<key>Device</key>
-				<string>HDA</string>
-				<key>Key</key>
-				<string>hda-gfx</string>
-				<key>Value</key>
+				<key>AAPL,ig-platform-id</key>
 				<data>
-				b25ib2FyZC0xAA==
+				AAAbWQ==
 				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>layout-id=2</string>
-				<key>Device</key>
-				<string>HDA</string>
-				<key>Key</key>
-				<string>layout-id</string>
-				<key>Value</key>
+				<key>device-id</key>
+				<data>
+				G1kAAA==
+				</data>
+				<key>disable-external-gpu</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>enable-hdmi20</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con2-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con2-index</key>
+				<data>
+				/////w==
+				</data>
+				<key>framebuffer-fbmem</key>
+				<data>
+				AACQAA==
+				</data>
+				<key>framebuffer-patch-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-portcount</key>
 				<data>
 				AgAAAA==
 				</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>HDA</string>
-				<key>Key</key>
-				<string>PinConfigurations</string>
-				<key>Value</key>
+				<key>framebuffer-stolenmem</key>
 				<data>
+				AAAwAQ==
+				</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>
+				AAAAgA==
 				</data>
 			</dict>
-		</array>
-		<key>AddProperties</key>
-		<array>
-			<dict>
-				<key>Comment</key>
-				<string>Inject "name" as (data)"#display" to disable graphics drivers on NVidia</string>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>name</string>
-				<key>Value</key>
-				<data>
-				I2Rpc3BsYXkA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Inject "IOName" as "#display" to disable graphics drivers on NVidia</string>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>IOName</string>
-				<key>Value</key>
-				<string>#display</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Inject bogus class-code to prevent graphics drivers loading for NVidia</string>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>class-code</string>
-				<key>Value</key>
-				<data>
-				/////w==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Inject "name" as (data)"#display" to disable graphics drivers on AMD</string>
-				<key>Device</key>
-				<string>ATI</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>name</string>
-				<key>Value</key>
-				<data>
-				I2Rpc3BsYXkA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Inject "IOName" as "#display" to disable graphics drivers on AMD</string>
-				<key>Device</key>
-				<string>ATI</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>IOName</string>
-				<key>Value</key>
-				<string>#display</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Inject bogus class-code to prevent graphics drivers loading for AMD</string>
-				<key>Device</key>
-				<string>ATI</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>class-code</string>
-				<key>Value</key>
-				<data>
-				/////w==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Inject bogus vendor-id to prevent graphics drivers loading for AMD</string>
-				<key>Device</key>
-				<string>ATI</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>vendor-id</string>
-				<key>Value</key>
-				<data>
-				//8AAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Inject bogus device-id to prevent graphics drivers loading for AMD</string>
-				<key>Device</key>
-				<string>ATI</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>device-id</string>
-				<key>Value</key>
-				<data>
-				//8AAA==
-				</data>
-			</dict>
-		</array>
-		<key>Audio</key>
-		<dict>
-			<key>AFGLowPowerState</key>
-			<true/>
-			<key>Inject</key>
-			<string>28</string>
-			<key>ResetHDA</key>
-			<false/>
-		</dict>
-		<key>FakeID</key>
-		<dict>
-			<key>#Kaby Lake-Comment</key>
-			<string>To avoid automatic Clover fake device-id (Skylake) injection</string>
 		</dict>
 		<key>USB</key>
 		<dict>
@@ -446,7 +244,7 @@
 			<true/>
 		</dict>
 		<key>UseIntelHDMI</key>
-		<true/>
+		<false/>
 	</dict>
 	<key>DisableDrivers</key>
 	<array>
@@ -510,6 +308,13 @@
 	</dict>
 	<key>Graphics</key>
 	<dict>
+		<key>#EDID</key>
+		<dict>
+			<key>Inject</key>
+			<false/>
+		</dict>
+		<key>#ig-platform-id</key>
+		<string>0x591b0000</string>
 		<key>EDID</key>
 		<dict>
 			<key>Custom</key>
@@ -529,12 +334,10 @@
 			<key>ATI</key>
 			<false/>
 			<key>Intel</key>
-			<true/>
+			<false/>
 			<key>NVidia</key>
-			<true/>
+			<false/>
 		</dict>
-		<key>ig-platform-id</key>
-		<string>0x591b0000</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -545,7 +348,6 @@
 		<key>ForceKextsToLoad</key>
 		<array>
 			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
-			<string>\System\Library\Extensions\AppleIntelKBLGraphicsFramebuffer.kext</string>
 		</array>
 		<key>KernelLapic</key>
 		<true/>
@@ -567,313 +369,41 @@
 				ILniAAAAkJA=
 				</data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable panic kext logging on 10.13 release kernel (credit vit9696)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				igKEwHRE
+				</data>
+				<key>MatchOS</key>
+				<string>10.13.x</string>
+				<key>Replace</key>
+				<data>
+				igKEwOtE
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable panic kext logging on 10.14 release kernel (credit vit9696)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				igKEwHRC
+				</data>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
+				<key>Replace</key>
+				<data>
+				igKEwOtC
+				</data>
+			</dict>
 		</array>
-		<key>KernelXCPM</key>
-		<true/>
 		<key>KextsToPatch</key>
 		<array>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#6_7</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				icGB4f8PAABIAdFIgfn/DwAAdzs=
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>IONVMeFamily</string>
-				<key>Replace</key>
-				<data>
-				icGB4f8BAABIAdFIgfn/AQAAdzs=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#17</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				RYTJD5XAD7bAweAMRAnYRA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>IONVMeFamily</string>
-				<key>Replace</key>
-				<data>
-				RYTJD5XAD7bAweAJRAnYRA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#16</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				weIIQQ+2wcHgDEQJ0EQJwA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>IONVMeFamily</string>
-				<key>Replace</key>
-				<data>
-				weIIQQ+2wcHgCUQJ0EQJwA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#15</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				Bf8PAABIwegMZvfB/w8PlQ==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>IONVMeFamily</string>
-				<key>Replace</key>
-				<data>
-				Bf8PAABIwegJZvfB/w8PlQ==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#14</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				iWTY+EmBxAAQAABJgccA8A==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>IONVMeFamily</string>
-				<key>Replace</key>
-				<data>
-				iWTY+EmBxAACAABJgccA8A==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#13</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				4b+AQBUGTYnWugAQAABFMQ==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>IONVMeFamily</string>
-				<key>Replace</key>
-				<data>
-				4b+AQBUGTYnWugACAABFMQ==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#12</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				yAAAAEkp17gAEAAATYskJA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>IONVMeFamily</string>
-				<key>Replace</key>
-				<data>
-				yAAAAEkp17gAAgAATYskJA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#11</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AABJiY4iAQAAugAQAABIKQ==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>IONVMeFamily</string>
-				<key>Replace</key>
-				<data>
-				AABJiY4iAQAAugACAABIKQ==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#9_10</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				BgIAAEyNuAAQAABMiflIgeEA8P//SYmGGgEAAEmJjiIB
-				AABBvAAQAABJKfQ=
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>IONVMeFamily</string>
-				<key>Replace</key>
-				<data>
-				BgIAAEyNuAACAABMiflIgeEA8P//SYmGGgEAAEmJjiIB
-				AABBvAACAABJKfQ=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#8</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				SYHF/w8AAEnB7QxJiwQkSA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>IONVMeFamily</string>
-				<key>Replace</key>
-				<data>
-				SYHF/w8AAEnB7QlJiwQkSA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#4</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				SYnGTYX2dGFBwecMSWP/vg==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>IONVMeFamily</string>
-				<key>Replace</key>
-				<data>
-				SYnGTYX2dGFBwecJSWP/vg==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#5</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				hv8PAABIwegMD7cPgeH/Dw==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>IONVMeFamily</string>
-				<key>Replace</key>
-				<data>
-				hv8PAABIwegJD7cPgeH/Dw==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#3</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AMeDpAAAAAAQAABIi0gISA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>IONVMeFamily</string>
-				<key>Replace</key>
-				<data>
-				AMeDpAAAAAACAABIi0gISA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#2</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				D7aMiIIAAACD+QwPhTIBAA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>IONVMeFamily</string>
-				<key>Replace</key>
-				<data>
-				D7aMiIIAAACD+QkPhTIBAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>IONVMeFamily Pike R. Alpha Patch#1</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				weAMBQAQAACJgw==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>IONVMeFamily</string>
-				<key>Replace</key>
-				<data>
-				weAJBQAQAACJgw==
-				</data>
-			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>change F%uT%04x to F%uTxxxx in AppleBacklightInjector.kext (credit RehabMan)</string>
@@ -894,156 +424,20 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>0x591b0000, 32MB BIOS, 19MB framebuffer 9MB cursor bytes (credit RehabMan)</string>
+				<string>Enable TRIM for SSD</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				AABgAgAAUAE=
+				AEFQUExFIFNTRAA=
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
 				<key>Replace</key>
 				<data>
-				AAAwAQAAkAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>0x591b0000, 0105 instead of 0306, HDMI</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				AgQKAAAIAACHAQAAAwYKAAAEAACHAQAA/wAAAAEAAAAg
-				AAAA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				AQUKAAAIAACHAQAAAgQKAAAIAACHAQAA/wAAAAEAAAAg
-				AAAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>0x591b0000, 0105 instead of 0204, HDMI</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				AgQKAAAIAACHAQAAAwYKAAAEAACHAQAA/wAAAAEAAAAg
-				AAAA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				AQUKAAAIAACHAQAAAwYKAAAEAACHAQAA/wAAAAEAAAAg
-				AAAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>0x591b0000, eliminate all external ports (0204 and 0306)</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				AgQKAAAIAACHAQAAAwYKAAAEAACHAQAA/wAAAAEAAAAg
-				AAAA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				/wAAAAEAAAAgAAAA/wAAAAEAAAAgAAAA/wAAAAEAAAAg
-				AAAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Fix HDMI output</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				Pk1hYy1CODA5QzM3NTdEQTlCQjhEPC9rZXk+CgkJCQk8
-				c3RyaW5nPkNvbmZpZzI8L3N0cmluZz4KCQ==
-				</data>
-				<key>InfoPlistPatch</key>
-				<true/>
-				<key>Name</key>
-				<string>AppleGraphicsDevicePolicy</string>
-				<key>Replace</key>
-				<data>
-				Pk1hYy1CODA5QzM3NTdEQTlCQjhEPC9rZXk+CgkJCQk8
-				c3RyaW5nPm5vbmU8L3N0cmluZz4KCQkJCQ==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>change 15 port limit to 26 in XHCI kext</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				g710////EA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
-				<key>Replace</key>
-				<data>
-				g710////Gw==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>HDMI-audio, port 0105, 0x191B0000</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AQUJAAAEAACHAQAA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				AQUJAAAIAACHAQAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Comment: 0x591B0000 Connector Patch by FB-Patcher (credit headkaze)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AAAIAAIAAACYAAAAAgQKAAAIAACHAQAAAwYKAAAEAACH
-				AQAA/wAAAAEAAAAgAAAA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>kext name</string>
-				<key>Replace</key>
-				<data>
-				AAAIAAIAAACYAAAAAgQKAAAIAACHAQAAAwYKAAAIAACH
-				AQAA/wAAAAEAAAAgAAAA
+				AAAAAAAAAAAAAAA=
 				</data>
 			</dict>
 		</array>
@@ -1054,27 +448,25 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
-		<key>MLB</key>
-		<string>C02710101J9DM66UE</string>
 		<key>ROM</key>
 		<data>
-		UOWQpru8
+		Yfzw+wCB
 		</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>02/08/2018</string>
+		<string>06/26/2018</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP143.88Z.0173.B00.1802080917</string>
+		<string>MBP143.88Z.0178.B00.1806261159</string>
 		<key>Board-ID</key>
 		<string>Mac-551B86E5744E2388</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02710101J9DM66UE</string>
+		<string>C02735609CDDNJL1H</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -1102,9 +494,9 @@
 		<key>ProductName</key>
 		<string>MacBookPro14,3</string>
 		<key>SerialNumber</key>
-		<string>C02TDWJJHTD5</string>
+		<string>C02V98YLHTD5</string>
 		<key>SmUUID</key>
-		<string>A8630E17-BD12-4198-8A56-7240AC972214</string>
+		<string>1BBCA054-E896-4205-AD3C-FBADF0FB0081</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
