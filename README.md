@@ -22,7 +22,7 @@ CPU :i7-7700HQ
 
 2.亮度调节最后最暗档位真的是最暗
 
-3.HDMI插入重启（应该修复了，没有显示器没法测试）
+3.HDMI无显示，不过不会重启
 
 4.无法调节亮度请将CLOVER/kexts/Other/AppleBacklightInjector.kext放入L/E或S/L/E可修复亮度
 
