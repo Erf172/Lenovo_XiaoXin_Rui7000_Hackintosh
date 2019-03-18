@@ -1,6 +1,7 @@
 ## 联想小新锐7000
 
------[ 配置信息 ]-------------------------
+
+### 配置信息 
 
 
 | 部件  | 信息 |
@@ -14,7 +15,7 @@
 | 无线网卡 | Broadcom BCM94352z 802.11ac Wireless Network Adapter |
 
 
------[ 已知问题 ]-------------------------
+### 已知问题 
 
 1. Fn亮度快捷键
 
@@ -22,13 +23,13 @@
 
 3. HDMI可用，但是不能插着启动。。。。
 
------[ 适用系统 ]-------------------------
+### 适用系统
 
 macOS High Sierra 10.13 
 
 macOS Mojave 10.14
 
-----[ 截图 (流量警告) ]--------------------
+### 截图 (流量警告) 
 
 ![SysScreen](https://img.vim-cn.com/6a/9ffd8b467320a6a6d5be385263b456cafd1888.png)
 ![SysScreen](https://img.vim-cn.com/49/5369b1e3bfd366b259dcd7aaa3d1ebdc77ade5.png)
@@ -37,7 +38,7 @@ macOS Mojave 10.14
 ![SysScreen](https://img.vim-cn.com/2d/52e5b23fd51d3d54d48c641c18d31aae6bb9c7.png)
 
 
-----[ 更新日志 ] -------------------------
+### 更新日志 
 
 1. 睡眠修复
 
