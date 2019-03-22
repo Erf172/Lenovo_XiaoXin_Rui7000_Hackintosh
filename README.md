@@ -1,8 +1,5 @@
 ## 联想小新锐7000
 
-<<<<<<< HEAD
-### 配置信息
-=======
 
 ### 配置信息 
 
@@ -19,9 +16,7 @@
 | 无线网卡 | Broadcom BCM94352z 802.11ac Wireless Network Adapter |
 
 
-<<<<<<< HEAD
-### 已知问题
-=======
+
 ### 已知问题 
 >>>>>>> 1701ae844a20b0d70c5ca152f66d496fc5a89f0f
 
@@ -37,7 +32,6 @@ macOS High Sierra 10.13
 
 macOS Mojave 10.14
 
-<<<<<<< HEAD
 ### 安装方法
 
 1. 在制作完启动盘或者安装完系统之后打开终端执行以下命令
@@ -48,9 +42,6 @@ macOS Mojave 10.14
 
 2. 删除相应的EFI分区的CLOVER文件夹并复制替换即可   
 
-=======
-### 截图 (流量警告) 
->>>>>>> 1701ae844a20b0d70c5ca152f66d496fc5a89f0f
 
     
 ### 系统截图
@@ -61,11 +52,8 @@ macOS Mojave 10.14
 ![SysScreen](https://img.vim-cn.com/2d/52e5b23fd51d3d54d48c641c18d31aae6bb9c7.png)
 
 
-<<<<<<< HEAD
 ### 更新日志
-=======
-### 更新日志 
->>>>>>> 1701ae844a20b0d70c5ca152f66d496fc5a89f0f
+
 
 1. 睡眠修复
 
@@ -83,5 +71,4 @@ macOS Mojave 10.14
 
 如果想要自己手动安装的话，可以[点击这里](https://www.erf172.tk/2019/02/13/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-1/)作为参考进行安装
 ~~大部分笔记本都可以按照这个思路进行安装~~
-=======
->>>>>>> 1701ae844a20b0d70c5ca152f66d496fc5a89f0f
+
