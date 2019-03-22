@@ -3,8 +3,6 @@
 
 ### 配置信息 
 
->>>>>>> 1701ae844a20b0d70c5ca152f66d496fc5a89f0f
-
 | 部件  | 信息 |
 | ---- | --- |
 | CPU  | Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz |
@@ -18,7 +16,6 @@
 
 
 ### 已知问题 
->>>>>>> 1701ae844a20b0d70c5ca152f66d496fc5a89f0f
 
 1. Fn亮度快捷键
 
@@ -64,11 +61,11 @@ macOS Mojave 10.14
 4. 更新了clover至4871
 
 5. 更新了一些驱动文件
-<<<<<<< HEAD
+
 
 
 ### 其他
 
-如果想要自己手动安装的话，可以[点击这里](https://www.erf172.tk/2019/02/13/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-1/)作为参考进行安装
+如果想要自己手动安装的话，可以[点击这里](https://www.erf172.tk/2019/02/13/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-1/)作为参考进行安装   
 ~~大部分笔记本都可以按照这个思路进行安装~~
 
