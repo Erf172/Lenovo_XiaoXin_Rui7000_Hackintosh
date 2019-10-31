@@ -72,9 +72,9 @@
 			<key>Fn Keys Mode 1</key>
 			<dict>
 				<key>BrightnessDown</key>
-				<string>F1</string>
+				<string>F5</string>
 				<key>BrightnessUp</key>
-				<string>F2</string>
+				<string>F6</string>
 				<key>KBBacklightDown</key>
 				<string>F3</string>
 				<key>KBBacklightUp</key>
@@ -90,11 +90,11 @@
 				<key>Misson Control</key>
 				<string>F3</string>
 				<key>SleepDisplay</key>
-				<string>F5</string>
+				<string>F1</string>
 				<key>Touchpad</key>
 				<string>Pause</string>
 				<key>VideoMirror</key>
-				<string>F6</string>
+				<string>F2</string>
 				<key>VolumeDown</key>
 				<string>F11</string>
 				<key>VolumeMute</key>
