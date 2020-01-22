@@ -334,7 +334,7 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>nv_disable=1 dart=0 -cdfon arch=x86_64 -igfxnohdmi lilucpu=9 slide=0</string>
+		<string>nv_disable=1 dart=0 -cdfon arch=x86_64 -igfxnohdmi lilucpu=9 slide=0 -v debug=0x100</string>
 		<key>NeverHibernate</key>
 		<false/>
 		<key>Secure</key>
@@ -595,6 +595,22 @@
 				<key>Replace</key>
 				<data>
 				igKEwOtC
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>AppleALC kernel panic</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				Y29tLmFwcGxlAF9fa2VybmVsX18A
+				</data>
+				<key>MatchOS</key>
+				<string>10.15.x</string>
+				<key>Replace</key>
+				<data>
+				bm90LmFwcGxlAF9fa2VybmVsX18A
 				</data>
 			</dict>
 		</array>

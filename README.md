@@ -19,15 +19,15 @@
 
 1. Fn亮度快捷键
 
-2. 无法调节亮度请将CLOVER/kexts/Other/AppleBacklightFixup.kext放入L/E或S/L/E可修复亮度
-
-3. HDMI可用，但是不能插着启动。。。。
+2. HDMI可用，但是不能插着启动。。。。
 
 ### 适用系统
 
 macOS High Sierra 10.13 
 
 macOS Mojave 10.14
+
+macOS Catalina 10.15 (大部分功能正常，不是主力，可能没有发现一些问题)
 
 ### 安装方法
 
@@ -52,11 +52,10 @@ macOS Mojave 10.14
 ### 更新日志
 
 
-1. 更新了clover至4925
+1. 更新了clover至5103
 
-2. 手动编译更新了一些驱动文件
+2. 更新了一些驱动文件
 
-3. 应该是解决了声卡不定时抽风的问题(感谢@亚索的反馈)
 
 
 ### 其他
