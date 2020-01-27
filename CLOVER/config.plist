@@ -255,16 +255,16 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change Method(_WAK,1,N) to ZWAK, pair with SSDT-PTSWAK.aml</string>
+					<string>change Method(_WAK,1,S) to ZWAK, pair with SSDT-PTSWAK.aml</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					X1dBSwE=
+					X1dBSwk=
 					</data>
 					<key>Replace</key>
 					<data>
-					WldBSwE=
+					WldBSwk=
 					</data>
 				</dict>
 				<dict>
@@ -279,20 +279,6 @@
 					<key>Replace</key>
 					<data>
 					WFBSVwI=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Rename BRT6 to BRTX, use with SSDT-BRT6.aml, SSDT-PNLF.aml, AppleBacklightInjector.kext, and VoodooPS2Controller.kext to fix brightness keys</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					FCBCUlQ2Ag==
-					</data>
-					<key>Replace</key>
-					<data>
-					FCBCUlRYAg==
 					</data>
 				</dict>
 			</array>
@@ -334,7 +320,7 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>nv_disable=1 dart=0 -cdfon arch=x86_64 -igfxnohdmi lilucpu=9 slide=0 -v debug=0x100</string>
+		<string>nv_disable=1 dart=0 -cdfon arch=x86_64 -igfxnohdmi lilucpu=9 slide=0 debug=0x100</string>
 		<key>NeverHibernate</key>
 		<false/>
 		<key>Secure</key>
@@ -704,7 +690,7 @@
 	<key>SystemParameters</key>
 	<dict>
 		<key>CustomUUID</key>
-		<string>A8630E17-BD12-4198-8A56-7240AC972214</string>
+		<string>82299559-3EBA-5AF0-A143-B2E7432FF6E4</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 	</dict>
