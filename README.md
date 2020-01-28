@@ -1,3 +1,4 @@
+
 ## 联想小新锐7000
 
 
@@ -28,7 +29,7 @@ macOS High Sierra 10.13
 
 macOS Mojave 10.14
 
-macOS Catalina 10.15 (大部分功能正常，不是主力，可能没有发现一些问题)
+macOS Catalina 10.15 (感谢@xoomp)
 
 ### 安装方法
 
