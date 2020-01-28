@@ -98,8 +98,6 @@
 				<integer>0</integer>
 				<key>Mask</key>
 				<data></data>
-				<key>OemTableId</key>
-				<data></data>
 				<key>Replace</key>
 				<data>WFExQw==</data>
 				<key>ReplaceMask</key>
@@ -678,7 +676,7 @@
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>/wAA////////////</data>
+				<data></data>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -862,7 +860,7 @@
 				<string>nvda_drv</string>
 				<string>prev-lang:kbd</string>
 				<string>efi-boot-device</string>
-				<string>efi-boot-debice-data</string>
+				<string>efi-boot-device-data</string>
 			</array>
 			<key>8BE4DF61-93CA-11D2-AA0D-00E098032B8C</key>
 			<array>
