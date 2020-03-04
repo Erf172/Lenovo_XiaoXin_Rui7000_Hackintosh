@@ -22,7 +22,6 @@
 
 2. OpenCore linux暂时无法引导
 
-
 ### 适用系统
 
 macOS High Sierra 10.13 
@@ -56,11 +55,15 @@ macOS Catalina 10.15 (感谢@xoomp)
 
 ### 更新日志
 
+#### 2020.1.28
 
-1. 更新了clover至5103
+    1. 更新了clover至5103
 
-2. 更新了一些驱动文件
+    2. 更新了一些驱动文件
 
+#### 2020.3.4
+
+    修复了睡眠会不定时唤醒的问题
 
 
 ### 其他
@@ -70,7 +73,7 @@ macOS Catalina 10.15 (感谢@xoomp)
 
 2. OpenCore中的 systemuuid需要修改为win10 系统中查询到的UUID，否则可能激活失效
 
-2. 如果想要自己手动安装的话，可以[点击这里](https://www.erf172.tk/2019/02/13/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-1/)作为参考进行安装   
+3. 如果想要自己手动安装的话，可以[点击这里](https://www.erf172.tk/2019/02/13/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-1/)作为参考进行安装   
 ~~大部分笔记本都可以按照这个思路进行安装~~
 
 
