@@ -38,9 +38,9 @@ macOS Catalina 10.15 (感谢@xoomp)
     sudo diskutil mount disk0s1   #disk0s1为你电脑本地磁盘或优盘的EFI分区
 ```
 
-2. Clover:删除相应的EFI分区的CLOVER文件夹并复制替换即可   
+2. 将你想要使用的引导方式的文件夹内的内容复制到EFI分区内的EFI文件夹即可
 
-3. OpenCore:将`BOOT`和`OC`文件夹复制到EFI文件夹内替换即可
+
 
 
 
@@ -66,11 +66,21 @@ macOS Catalina 10.15 (感谢@xoomp)
     修复了睡眠会不定时唤醒的问题
 
 
+#### 2020.3.25
+
+    1. 更新CLOVER至5107
+
+    2. 更新OpenCore至0.5.6
+
+    3. 可以使用系统内置的读卡器
+
+    4. 更新一部分内核驱动文件
+
 ### 其他
 
 
-1. OpenCore 引导切换为: 启动的时候按住键盘上的`ESC`键 MACOS使用系统偏好设置中的启动磁盘修改 Win10 可以使用按住shift键重启->从其他设备启动->MACOS X
-
+1. OpenCore 引导切换为启动的时候按住键盘上的`ESC`键 ，如果想要体验白苹果的切换体验，可以在Windows下安装Bootcamp支持软件(安装完可能需要手动更新一次才能识别APFS分区。)   
+    **注意：安装完Bootcamp可能D盘会被隐藏，可以手动去磁盘管理挂载，或者格式化一次(注意备份数据)**
 2. OpenCore中的 systemuuid需要修改为win10 系统中查询到的UUID，否则可能激活失效
 
 3. 如果想要自己手动安装的话，可以[点击这里](https://www.erf172.tk/2019/02/13/Hackintosh-Installation-on-Lenovo-Xiaoxin-Rui7000-1/)作为参考进行安装   
