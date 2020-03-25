@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.4.5</string>
+	<string>1.4.7</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,7 +25,7 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.4.5</string>
+	<string>1.4.7</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -48,36 +48,6 @@
 			<string>com.apple.driver.AppleHDAHardwareConfigDriver</string>
 			<key>HDAConfigDefault</key>
 			<array>
-				<dict>
-					<key>AFGLowPowerState</key>
-					<data>
-					AwAAAA==
-					</data>
-					<key>CodecID</key>
-					<integer>283902610</integer>
-					<key>Comment</key>
-					<string>baesar0 -ALC 292 for e6540 with dock</string>
-					<key>ConfigData</key>
-					<data>
-					ASccEAEnHQEBJx6mAScfkAE3HPABNx0AATce
-					AAE3H0ABRxxAAUcdAQFHHhcBRx+QAUcMAgFX
-					HFABVx1AAVceKwFXHwIBVwwCAWccgAFnHUAB
-					Zx4BAWcfAgFnDAIBhxzwAYcdAAGHHgABhx9A
-					AZccIAGXHZABlx6BAZcfAgGnHHABpx0QAace
-					qwGnHwIBtxzwAbcdAAG3HgABtx9AAdcc8AHX
-					HQAB1x4AAdcfQAHnHPAB5x0AAeceAAHnH0A=
-					</data>
-					<key>FuncGroup</key>
-					<integer>1</integer>
-					<key>LayoutID</key>
-					<integer>55</integer>
-					<key>WakeConfigData</key>
-					<data>
-					AUcMAg==
-					</data>
-					<key>WakeVerbReinit</key>
-					<true/>
-				</dict>
 				<dict>
 					<key>AFGLowPowerState</key>
 					<data>
@@ -619,6 +589,32 @@
 					<integer>1</integer>
 					<key>LayoutID</key>
 					<integer>7</integer>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>ALC215 for HP 830 G6 for 965987400abc</string>
+					<key>CodecID</key>
+					<integer>283902485</integer>
+					<key>ConfigData</key>
+					<data>
+					AUccEAFHHQEBRx4XAUcfmQIXHCACFx0QAhce
+					IQIXHwECFwwCASccMAEnHRgBJx6BAScfAQGX
+					HEABlx0BAZcepgGXH5kBRwwC
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>18</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
 				</dict>
 				<dict>
 					<key>AFGLowPowerState</key>
@@ -1197,6 +1193,58 @@
 					AwAAAA==
 					</data>
 					<key>Codec</key>
+					<string>MacPeet - Realtek ALC235 for ASUS GL553VD</string>
+					<key>CodecID</key>
+					<integer>283902517</integer>
+					<key>ConfigData</key>
+					<data>
+					AhccIAIXHRACFx4rAhcfAAG3HDABtx0AAbce
+					pwG3H5ABlxwwAZcdEAGXHosBlx8BAUccQAFH
+					HQABRx4XAUcfkAFHDAI=
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>16</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>Realtek ALC235 for Lenovo ThinkCentre Tiny M720q by marian</string>
+					<key>CodecID</key>
+					<integer>283902517</integer>
+					<key>ConfigData</key>
+					<data>
+					AUccEAFHHQEBRx4XAUcfkAFHDAICFxwfAhcd
+					EAIXHiECFx8CAhcMAgGXHCABlx0QAZceoAGX
+					H5IBpxwwAacdEAGnHoABpx8C
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>17</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAgIXDAIBlwwAAacMAA==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
 					<string>ALC235 for Lenovo C530 Desktop PC by Andres ZeroCross</string>
 					<key>CodecID</key>
 					<integer>283902517</integer>
@@ -1326,6 +1374,28 @@
 					<data>
 					AUcMAg==
 					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>ALC236 for Lenovo Xiaoxin Air 14IKBR by AlexanderLake</string>
+					<key>CodecID</key>
+					<integer>283902518</integer>
+					<key>ConfigData</key>
+					<data>
+					ASccEAEnHQEBJx6gAScfkAFHHEABRx0BAUce
+					EAFHH5ABRwwCAZccIAGXHRABlx6LAZcfAQIX
+					HFACFx0QAhceKwIXHwECFwwC
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>12</integer>
 					<key>WakeVerbReinit</key>
 					<true/>
 				</dict>
@@ -1694,32 +1764,6 @@
 					AwAAAA==
 					</data>
 					<key>Codec</key>
-					<string>cowpod - Realtek ALC255 for UX360CA</string>
-					<key>CodecID</key>
-					<integer>283902549</integer>
-					<key>ConfigData</key>
-					<data>
-					AUccEAFHHQABRx4XAUcfkAFHDAICFxwgAhcd
-					EAIXHiECFx8AAhcMAgEnHDABJx0AAScepgEn
-					H5ABlxxAAZcdAAGXHoEBlx8A
-					</data>
-					<key>FuncGroup</key>
-					<integer>1</integer>
-					<key>LayoutID</key>
-					<integer>31</integer>
-					<key>WakeConfigData</key>
-					<data>
-					AUcMAg==
-					</data>
-					<key>WakeVerbReinit</key>
-					<true/>
-				</dict>
-				<dict>
-					<key>AFGLowPowerState</key>
-					<data>
-					AwAAAA==
-					</data>
-					<key>Codec</key>
 					<string>ALC255 for Asus X556UA m-dudarev</string>
 					<key>CodecID</key>
 					<integer>283902549</integer>
@@ -1788,6 +1832,58 @@
 					<integer>1</integer>
 					<key>LayoutID</key>
 					<integer>30</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>cowpod - Realtek ALC255 for UX360CA</string>
+					<key>CodecID</key>
+					<integer>283902549</integer>
+					<key>ConfigData</key>
+					<data>
+					AUccEAFHHQABRx4XAUcfkAFHDAICFxwgAhcd
+					EAIXHiECFx8AAhcMAgEnHDABJx0AAScepgEn
+					H5ABlxxAAZcdAAGXHoEBlx8A
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>31</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>DoctorStrange96 - Realtek ALC255 for Acer Aspire A51x</string>
+					<key>CodecID</key>
+					<integer>283902549</integer>
+					<key>ConfigData</key>
+					<data>
+					ASccQAEnHQEBJx6mAScfkAFHHCABRx0BAUce
+					FwFHH5ABRwwCAZcccAGXHRABlx6LAZcfAgIX
+					HDACFx0QAhceIQIXHwICFwwC
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>71</integer>
 					<key>WakeConfigData</key>
 					<data>
 					AUcMAg==
@@ -1976,6 +2072,36 @@
 					AwAAAA==
 					</data>
 					<key>Codec</key>
+					<string>VicQ - Realtek ALC256 (3246) for Dell 7000 Series with 2.1Ch</string>
+					<key>CodecID</key>
+					<integer>283902550</integer>
+					<key>ConfigData</key>
+					<data>
+					ASccYAEnHAEBJxymAScckAE3HPABNx0AATce
+					AAE3H0ABRxxAAUcdAQFHHhABRx+QAUcMAgGH
+					HPABhx0AAYceAAGHH0ABlxwgAZcdEAGXHosB
+					lx8BAacccAGnHQABpx6hAacfAQG3HEEBtx0B
+					AbceEAG3H5ABtwwCAdcc8AHXHQAB1x4AAdcf
+					QAHnHPAB5x0AAeceAAHnH0ACFxxQAhcdEAIX
+					HisCFx8BAhcMAg==
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>16</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAgG3DAI=
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
 					<string>Andres ZeroCross for Dell 5570</string>
 					<key>CodecID</key>
 					<integer>283902550</integer>
@@ -2016,7 +2142,33 @@
 					<integer>22</integer>
 					<key>WakeConfigData</key>
 					<data>
-					AUcMAgIXDAIBlwclAhcIgw==
+					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>CodecID</key>
+					<integer>283902550</integer>
+					<key>Comment</key>
+					<string>Andres ZeroCross for Razer Blade 15 RZ09-02705E75</string>
+					<key>ConfigData</key>
+					<data>
+					AUccUAFHHQABRx4XAUcfkAFHDAIBJxwwAScd
+					AAEnHqABJx+QAhccIAIXHRACFx4hAhcfAAGX
+					HEABlx0QAZcegQGXHwQ=
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>23</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAg==
 					</data>
 					<key>WakeVerbReinit</key>
 					<true/>
@@ -2214,7 +2366,7 @@
 					<key>FuncGroup</key>
 					<integer>1</integer>
 					<key>LayoutID</key>
-					<integer>11</integer>
+					<integer>18</integer>
 					<key>WakeConfigData</key>
 					<data>
 					AUcMAg==
@@ -2438,7 +2590,7 @@
 					<key>Codec</key>
 					<string>Mirone - Realtek ALC269-VB v1</string>
 					<key>CodecID</key>
-					<integer>283902568</integer>
+					<integer>283902569</integer>
 					<key>ConfigData</key>
 					<data>
 					AUccQAFHHQEBRx4TAUcfmQGHHCABhx0QAYce
@@ -2523,8 +2675,6 @@
 					<string>Mirone - Realtek ALC269-VB v3</string>
 					<key>CodecID</key>
 					<integer>283902569</integer>
-					<key>Comment</key>
-					<string>Mirone - Realtek ALC269 for Asus K53SJ, Asus G73s</string>
 					<key>ConfigData</key>
 					<data>
 					ASccEAEnHQABJx6gAScfkAFHHCABRx0AAUce
@@ -2625,9 +2775,9 @@
 					<integer>283902569</integer>
 					<key>ConfigData</key>
 					<data>
-					AUccEAFHHQABRx4TAUcfkAGHHDABhx0QAYce
-					gQGHHwABJxxAAScdAAEnHqABJx+QAVccUAFX
-					HRABVx4hAVcfAAFHDAI=
+					ASccEAEnHQABJx6gAScfkAFHHCABRx0AAUce
+					EwFHH5ABhxwwAYcdEAGHHoEBhx8AAhccUAIX
+					HRACFx4hAhcfAAFHDAI=
 					</data>
 					<key>FuncGroup</key>
 					<integer>1</integer>
@@ -2879,7 +3029,7 @@
 					<integer>19</integer>
 					<key>WakeConfigData</key>
 					<data>
-					AVcMAg==
+					AUcMAg==
 					</data>
 					<key>WakeVerbReinit</key>
 					<true/>
@@ -3489,7 +3639,7 @@
 					<key>FuncGroup</key>
 					<integer>1</integer>
 					<key>LayoutID</key>
-					<integer>99</integer>
+					<integer>3</integer>
 					<key>WakeConfigData</key>
 					<data>
 					AUcMAg==
@@ -3517,7 +3667,7 @@
 					<integer>4</integer>
 					<key>WakeConfigData</key>
 					<data>
-					AacMAg==
+					AUcMAg==
 					</data>
 					<key>WakeVerbReinit</key>
 					<true/>
@@ -3610,7 +3760,7 @@
 					<key>FuncGroup</key>
 					<integer>1</integer>
 					<key>LayoutID</key>
-					<integer>3</integer>
+					<integer>28</integer>
 					<key>WakeConfigData</key>
 					<data>
 					AUcMAg==
@@ -3856,7 +4006,7 @@
 					<integer>3</integer>
 					<key>WakeConfigData</key>
 					<data>
-					AWcMAgIXDAI=
+					AUcMAg==
 					</data>
 					<key>WakeVerbReinit</key>
 					<true/>
@@ -3948,7 +4098,7 @@
 					<key>FuncGroup</key>
 					<integer>1</integer>
 					<key>LayoutID</key>
-					<integer>28</integer>
+					<integer>15</integer>
 				</dict>
 				<dict>
 					<key>AFGLowPowerState</key>
@@ -4014,7 +4164,7 @@
 					<key>FuncGroup</key>
 					<integer>1</integer>
 					<key>LayoutID</key>
-					<integer>4</integer>
+					<integer>3</integer>
 					<key>WakeConfigData</key>
 					<data>
 					AUcMAg==
@@ -4069,6 +4219,12 @@
 					<integer>1</integer>
 					<key>LayoutID</key>
 					<integer>13</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
 				</dict>
 				<dict>
 					<key>AFGLowPowerState</key>
@@ -4590,8 +4746,6 @@
 					<data>
 					AwAAAA==
 					</data>
-					<key>Codec</key>
-					<string>Custom by Slbomber ALC283 (V3-371)</string>
 					<key>CodecID</key>
 					<integer>283902597</integer>
 					<key>CodecName</key>
@@ -4622,8 +4776,6 @@
 					<data>
 					AwAAAA==
 					</data>
-					<key>Codec</key>
-					<string>MacPeet - alc283 for LENOVO IDEAPAD 14</string>
 					<key>CodecID</key>
 					<integer>283902598</integer>
 					<key>CodecName</key>
@@ -4650,8 +4802,6 @@
 					<data>
 					AwAAAA==
 					</data>
-					<key>Codec</key>
-					<string>Realtek ALC283 for ThinkCentre M93z 10AF ALC283 by giesteira </string>
 					<key>CodecID</key>
 					<integer>283902598</integer>
 					<key>CodecName</key>
@@ -4843,8 +4993,6 @@
 					<data>
 					AwAAAA==
 					</data>
-					<key>Codec</key>
-					<string>Mirone - Realtek ALC288</string>
 					<key>CodecID</key>
 					<integer>283902608</integer>
 					<key>Comment</key>
@@ -4898,7 +5046,31 @@
 					AwAAAA==
 					</data>
 					<key>Codec</key>
-					<string>yyfn - Realtek ALC288 for Dell XPS 9343</string>
+					<string>MacPeet - alc292 for LENOVO THINKPAD T450_T450s_X240 - ManualMode</string>
+					<key>CodecID</key>
+					<integer>283902610</integer>
+					<key>ConfigData</key>
+					<data>
+					AaccIAGnHRABpx6BAacfAAEnHDABJx0AASce
+					pgEnH5ABRxxAAUcdAAFHHhcBRx+QAUcMAgFX
+					HFABVx0QAVceAQFXHwABVwwC
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>15</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAgFXDAI=
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
 					<key>CodecID</key>
 					<integer>283902610</integer>
 					<key>Comment</key>
@@ -4919,8 +5091,6 @@
 					<data>
 					AwAAAA==
 					</data>
-					<key>Codec</key>
-					<string>Realtek ALC289 for Acer PT515-51 By Bugprogrammer and Rover</string>
 					<key>CodecID</key>
 					<integer>283902610</integer>
 					<key>Comment</key>
@@ -4947,8 +5117,6 @@
 					<data>
 					AwAAAA==
 					</data>
-					<key>Codec</key>
-					<string>Mirone - Realtek ALC290</string>
 					<key>CodecID</key>
 					<integer>283902610</integer>
 					<key>Comment</key>
@@ -4967,6 +5135,36 @@
 					<integer>1</integer>
 					<key>LayoutID</key>
 					<integer>32</integer>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>CodecID</key>
+					<integer>283902610</integer>
+					<key>Comment</key>
+					<string>baesar0 -ALC 292 for e6540 with dock</string>
+					<key>ConfigData</key>
+					<data>
+					ASccEAEnHQEBJx6mAScfkAE3HPABNx0AATce
+					AAE3H0ABRxxAAUcdAQFHHhcBRx+QAUcMAgFX
+					HFABVx1AAVceKwFXHwIBVwwCAWccgAFnHUAB
+					Zx4BAWcfAgFnDAIBhxzwAYcdAAGHHgABhx9A
+					AZccIAGXHZABlx6BAZcfAgGnHHABpx0QAace
+					qwGnHwIBtxzwAbcdAAG3HgABtx9AAdcc8AHX
+					HQAB1x4AAdcfQAHnHPAB5x0AAeceAAHnH0A=
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>55</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
 				</dict>
 				<dict>
 					<key>AFGLowPowerState</key>
@@ -5139,6 +5337,59 @@
 					<key>WakeConfigData</key>
 					<data>
 					AXcMAgIXDAI=
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>Ayat Kyo - Realtek ALC294 for Asus ROG G531GD</string>
+					<key>CodecID</key>
+					<integer>283902612</integer>
+					<key>ConfigData</key>
+					<data>
+					ATccAAE3HQABNx4QATcfQAFHHBABRx0BAUce
+					FwFHH5ABRwwCAZccIAGXHRABlx6BAZcfBAIX
+					HDACFx0QAhceIQIXHwQCFwwCAdccQAHXHZoB
+					1x5nAdcfQAEnHFABJx0BASceoAEnH5A=
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>28</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAgIXDAI=
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>KKKIIINNN - ALC294 ASUS X542UQR</string>
+					<key>CodecID</key>
+					<integer>283902612</integer>
+					<key>ConfigData</key>
+					<data>
+					AhccIAIXHRACFx4hAhcfAQG3HDABtx0BAbce
+					pwG3H5ABlxwwAZcdEAGXHoEBlx8BAUccEAFH
+					HQEBRx4XAUcfkAFHDAIBtwwCAhcMAg==
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>66</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAgG3DAICFwwC
 					</data>
 					<key>WakeVerbReinit</key>
 					<true/>
@@ -6343,7 +6594,7 @@
 					<integer>283903744</integer>
 					<key>ConfigData</key>
 					<data>
-					AZceYQGXByU=
+					AZceYQGXByUBtx4R
 					</data>
 					<key>FuncGroup</key>
 					<integer>1</integer>
@@ -8186,8 +8437,6 @@
 					<data>
 					AwAAAA==
 					</data>
-					<key>Codec</key>
-					<string>Lenovo 720S-15IKB ALC298 by Andres ZeroCross</string>
 					<key>CodecID</key>
 					<integer>283904256</integer>
 					<key>Comment</key>
@@ -8205,10 +8454,10 @@
 					<key>FuncGroup</key>
 					<integer>1</integer>
 					<key>LayoutID</key>
-					<integer>21</integer>
+					<integer>1</integer>
 					<key>WakeConfigData</key>
 					<data>
-					AacMAg==
+					AUcMAg==
 					</data>
 					<key>WakeVerbReinit</key>
 					<true/>
@@ -8218,8 +8467,6 @@
 					<data>
 					AwAAAA==
 					</data>
-					<key>Codec</key>
-					<string>Razer Blade 14 2017 by Andres ZeroCross</string>
 					<key>CodecID</key>
 					<integer>283904256</integer>
 					<key>Comment</key>
@@ -8250,8 +8497,6 @@
 					<data>
 					AwAAAA==
 					</data>
-					<key>Codec</key>
-					<string>vusun123 - Realtek ALC298 for Dell XPS 9x50</string>
 					<key>CodecID</key>
 					<integer>283904256</integer>
 					<key>Comment</key>
@@ -8367,8 +8612,6 @@
 					<data>
 					AwAAAA==
 					</data>
-					<key>Codec</key>
-					<string>lgs3137 - Realtek ALC298 MECHREVO S1</string>
 					<key>CodecID</key>
 					<integer>283906592</integer>
 					<key>CodecName</key>
@@ -8398,8 +8641,6 @@
 					<data>
 					AwAAAA==
 					</data>
-					<key>Codec</key>
-					<string>Custom - Realtek ALC298 for Dell XPS 9560 by KNNSpeed</string>
 					<key>CodecID</key>
 					<integer>283906592</integer>
 					<key>CodecName</key>
@@ -8429,8 +8670,6 @@
 					<data>
 					AwAAAA==
 					</data>
-					<key>Codec</key>
-					<string>Daliansky - Realtek ALC298 XiaoMi Pro</string>
 					<key>CodecID</key>
 					<integer>283906592</integer>
 					<key>CodecName</key>
@@ -8461,8 +8700,6 @@
 					<data>
 					AwAAAA==
 					</data>
-					<key>Codec</key>
-					<string>Andres - ALC299 Acer Helios 500</string>
 					<key>CodecID</key>
 					<integer>283906592</integer>
 					<key>CodecName</key>
@@ -8490,8 +8727,6 @@
 					<data>
 					AwAAAA==
 					</data>
-					<key>Codec</key>
-					<string>Andres - ALC299 Dell XPS13</string>
 					<key>CodecID</key>
 					<integer>283906592</integer>
 					<key>CodecName</key>
@@ -8521,8 +8756,6 @@
 					<data>
 					AwAAAA==
 					</data>
-					<key>Codec</key>
-					<string>Mirone - Realtek ALC662</string>
 					<key>CodecID</key>
 					<integer>283906592</integer>
 					<key>CodecName</key>
@@ -8545,8 +8778,6 @@
 					<data>
 					AwAAAA==
 					</data>
-					<key>Codec</key>
-					<string>Mirone - Realtek ALC662</string>
 					<key>CodecID</key>
 					<integer>283906592</integer>
 					<key>CodecName</key>
@@ -8568,8 +8799,6 @@
 					<data>
 					AwAAAA==
 					</data>
-					<key>Codec</key>
-					<string>Custom ALC662 by Irving23 for Lenovo ThinkCentre M8400t-N000</string>
 					<key>CodecID</key>
 					<integer>283906592</integer>
 					<key>CodecName</key>
@@ -8653,8 +8882,6 @@
 					<data>
 					AwAAAA==
 					</data>
-					<key>Codec</key>
-					<string>MacPeet - ALC662 for Acer Aspire A7600U All in One</string>
 					<key>CodecID</key>
 					<integer>283906592</integer>
 					<key>CodecName</key>
@@ -8714,8 +8941,6 @@
 					<data>
 					AwAAAA==
 					</data>
-					<key>Codec</key>
-					<string>Custom ALC662 by aloha_cn for HP Compaq Elite 8000 SFF</string>
 					<key>CodecID</key>
 					<integer>283906592</integer>
 					<key>CodecName</key>
@@ -8736,6 +8961,35 @@
 					<key>WakeConfigData</key>
 					<data>
 					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>CodecID</key>
+					<integer>283906592</integer>
+					<key>CodecName</key>
+					<string>MacPeet- ALC1220 for Z370 AORUS Gaming 7 - Output SP/HP SwitchMode</string>
+					<key>ConfigData</key>
+					<data>
+					AeccMAHnHSAB5x5FAecfAQGHHEABhx2QAYce
+					oQGHH5ABlxxQAZcdkAGXHoEBlx8CAUccYAFH
+					HUABRx4hAUcfAgFHDAIBVxxwAVcdEAFXHgEB
+					Vx8BAWccgAFnHWABZx4BAWcfAQGnHJABpx0w
+					AacegQGnHwEBtxygAbcdQAG3HhEBtx+QAbcM
+					Ag==
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>30</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAgG3DAI=
 					</data>
 					<key>WakeVerbReinit</key>
 					<true/>
@@ -10765,6 +11019,32 @@
 					<key>WakeConfigData</key>
 					<data>
 					AUcMAg==
+					</data>
+					<key>WakeVerbReinit</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>AFGLowPowerState</key>
+					<data>
+					AwAAAA==
+					</data>
+					<key>Codec</key>
+					<string>Lancet-X—Realtek ALC295/ALC3254 for HP OMEN 15-AX000</string>
+					<key>CodecID</key>
+					<integer>283902613</integer>
+					<key>ConfigData</key>
+					<data>
+					ASccEAEnHQEBJx6mAScfmQFHHEABRx0BAUce
+					FwFHH5kBlxwgAZcdEAGXHoEBlx8AAhccUAIX
+					HRACFx4hAhcfAAFHDAICFwwC
+					</data>
+					<key>FuncGroup</key>
+					<integer>1</integer>
+					<key>LayoutID</key>
+					<integer>23</integer>
+					<key>WakeConfigData</key>
+					<data>
+					AUcMAgIXDAI=
 					</data>
 					<key>WakeVerbReinit</key>
 					<true/>
