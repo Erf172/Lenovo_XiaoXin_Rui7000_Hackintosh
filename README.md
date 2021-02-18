@@ -30,6 +30,8 @@ macOS Mojave 10.14
 
 macOS Catalina 10.15 (感谢@xoomp)
 
+macOS BigSur 11
+
 ### 安装方法
 
 1. 在制作完启动盘或者安装完系统之后打开终端执行以下命令
@@ -81,6 +83,15 @@ macOS Catalina 10.15 (感谢@xoomp)
     1. 更新CLOVER至5119
 
     2. 更新OpenCore至0.5.9
+
+    3. 更新一部分内核驱动文件
+
+
+#### 2021.2.16
+
+    1. 更新OpenCore至0.6.5
+
+    2. 支持Big Sur
 
     3. 更新一部分内核驱动文件
 
