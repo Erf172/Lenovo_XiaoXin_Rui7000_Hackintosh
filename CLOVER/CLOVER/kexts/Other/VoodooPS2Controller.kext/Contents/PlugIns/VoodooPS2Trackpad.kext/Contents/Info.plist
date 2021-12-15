@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>18D109</string>
+	<string>19H1417</string>
 	<key>CFBundleExecutable</key>
 	<string>VoodooPS2Trackpad</string>
 	<key>CFBundleGetInfoString</key>
-	<string>2.0.1, Copyright Apple Computer, Inc. 2002-2003, mackerintel 2008, RehabMan 2012-2013</string>
+	<string>2.2.7, Copyright Apple Computer, Inc. 2002-2003, mackerintel 2008, RehabMan 2012-2013</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.rehabman.voodoo.driver.PS2Trackpad</string>
+	<string>as.acidanthera.voodoo.driver.PS2Trackpad</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.0.1</string>
+	<string>2.2.7</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,27 +25,29 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>2.0.1</string>
+	<string>2.2.7</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>10E1001</string>
+	<string>12B45b</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>GM</string>
+	<string>11.0</string>
 	<key>DTSDKBuild</key>
-	<string>18E219</string>
+	<string>20A2408</string>
 	<key>DTSDKName</key>
-	<string>macosx10.14</string>
+	<string>macosx11.0</string>
 	<key>DTXcode</key>
-	<string>1020</string>
+	<string>1220</string>
 	<key>DTXcodeBuild</key>
-	<string>10E1001</string>
+	<string>12B45b</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>ALPS GlidePoint</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.rehabman.voodoo.driver.PS2Trackpad</string>
+			<string>as.acidanthera.voodoo.driver.PS2Trackpad</string>
 			<key>IOClass</key>
 			<string>ApplePS2ALPSGlidePoint</string>
 			<key>IOProbeScore</key>
@@ -105,21 +107,95 @@
 				</dict>
 			</dict>
 		</dict>
+		<key>Elantech TouchPad</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>as.acidanthera.voodoo.driver.PS2Trackpad</string>
+			<key>IOClass</key>
+			<string>ApplePS2Elan</string>
+			<key>IOProbeScore</key>
+			<integer>7000</integer>
+			<key>IOProviderClass</key>
+			<string>ApplePS2MouseDevice</string>
+			<key>Platform Profile</key>
+			<dict>
+				<key>Default</key>
+				<dict>
+					<key>ButtonCount</key>
+					<integer>3</integer>
+					<key>Darwin 16+</key>
+					<dict>
+						<key>ApplePreferenceCapability</key>
+						<true/>
+						<key>ApplePreferenceIdentifier</key>
+						<string>com.apple.AppleMultitouchTrackpad</string>
+						<key>MT Built-in</key>
+						<true/>
+						<key>MTHIDDevice</key>
+						<true/>
+						<key>SupportsGestureScrolling</key>
+						<true/>
+						<key>TrackpadEmbedded</key>
+						<true/>
+						<key>TrackpadFourFingerGestures</key>
+						<true/>
+						<key>TrackpadSecondaryClickCorners</key>
+						<true/>
+						<key>TrackpadThreeFingerDrag</key>
+						<false/>
+					</dict>
+					<key>DisableDevice</key>
+					<false/>
+					<key>ForceTouchMode</key>
+					<integer>1</integer>
+					<key>MouseResolution</key>
+					<integer>3</integer>
+					<key>MouseSampleRate</key>
+					<integer>200</integer>
+					<key>ProcessBluetoothMouseStopsTrackpad</key>
+					<true/>
+					<key>ProcessUSBMouseStopsTrackpad</key>
+					<true/>
+					<key>QuietTimeAfterTyping</key>
+					<integer>500000000</integer>
+					<key>ScrollResolution</key>
+					<integer>400</integer>
+					<key>SetHwResolution</key>
+					<true/>
+					<key>TrackpointDividerX</key>
+					<integer>120</integer>
+					<key>TrackpointDividerY</key>
+					<integer>120</integer>
+					<key>TrackpointMultiplierX</key>
+					<integer>120</integer>
+					<key>TrackpointMultiplierY</key>
+					<integer>120</integer>
+					<key>USBMouseStopsTrackpad</key>
+					<integer>0</integer>
+					<key>UseHighRate</key>
+					<true/>
+					<key>WakeDelay</key>
+					<integer>1000</integer>
+				</dict>
+			</dict>
+			<key>RM,deliverNotifications</key>
+			<true/>
+		</dict>
 		<key>Native Multitouch Engine</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.rehabman.voodoo.driver.PS2Trackpad</string>
+			<string>as.acidanthera.voodoo.driver.PS2Trackpad</string>
 			<key>IOClass</key>
-			<string>VoodooI2CNativeEngine</string>
+			<string>VoodooPS2NativeEngine</string>
 			<key>IOMatchCategory</key>
-			<string>VoodooI2CNativeEngine</string>
+			<string>VoodooPS2NativeEngine</string>
 			<key>IOProviderClass</key>
-			<string>VoodooI2CMultitouchInterface</string>
+			<string>VoodooPS2MultitouchInterface</string>
 		</dict>
 		<key>Sentelic FSP</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.rehabman.voodoo.driver.PS2Trackpad</string>
+			<string>as.acidanthera.voodoo.driver.PS2Trackpad</string>
 			<key>IOClass</key>
 			<string>ApplePS2SentelicFSP</string>
 			<key>IOProbeScore</key>
@@ -182,7 +258,7 @@
 		<key>Synaptics TouchPad</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.rehabman.voodoo.driver.PS2Trackpad</string>
+			<string>as.acidanthera.voodoo.driver.PS2Trackpad</string>
 			<key>HIDPointerAccelerationTable</key>
 			<data>
 			AACAAFVTQioABwAAAAAAAgAEAAAABAAAABAAAAAQAAAAACAAAA0A
@@ -251,10 +327,6 @@
 				<dict>
 					<key>ButtonCount</key>
 					<integer>3</integer>
-					<key>ClickPadClickTime</key>
-					<integer>300000000</integer>
-					<key>ClickPadTrackBoth</key>
-					<true/>
 					<key>Darwin 16+</key>
 					<dict>
 						<key>ApplePreferenceCapability</key>
@@ -270,7 +342,7 @@
 						<key>TrackpadEmbedded</key>
 						<true/>
 						<key>TrackpadFourFingerGestures</key>
-						<false/>
+						<true/>
 						<key>TrackpadSecondaryClickCorners</key>
 						<true/>
 						<key>TrackpadThreeFingerDrag</key>
@@ -280,12 +352,14 @@
 					<false/>
 					<key>DisableLEDUpdating</key>
 					<false/>
-					<key>DynamicEWMode</key>
-					<false/>
 					<key>FakeMiddleButton</key>
 					<true/>
-					<key>FingerChangeIgnoreDeltas</key>
-					<integer>3</integer>
+					<key>ForceTouchCustomDownThreshold</key>
+					<integer>90</integer>
+					<key>ForceTouchCustomPower</key>
+					<integer>8</integer>
+					<key>ForceTouchCustomUpThreshold</key>
+					<integer>20</integer>
 					<key>ForceTouchMode</key>
 					<integer>1</integer>
 					<key>ForceTouchPressureThreshold</key>
@@ -308,10 +382,6 @@
 					<false/>
 					<key>USBMouseStopsTrackpad</key>
 					<integer>0</integer>
-					<key>UnitsPerMMX</key>
-					<integer>50</integer>
-					<key>UnitsPerMMY</key>
-					<integer>50</integer>
 					<key>UseHighRate</key>
 					<true/>
 					<key>WakeDelay</key>
@@ -371,18 +441,12 @@
 					<string>Thinkpad_ClickPad</string>
 					<key>Thinkpad_ClickPad</key>
 					<dict>
-						<key>DynamicEWMode</key>
-						<false/>
-						<key>EdgeBottom</key>
-						<integer>0</integer>
 						<key>FakeMiddleButton</key>
 						<false/>
 						<key>FingerZ</key>
 						<integer>30</integer>
 						<key>HWResetOnStart</key>
 						<true/>
-						<key>MaxTapTime</key>
-						<integer>100000000</integer>
 						<key>MouseMultiplierX</key>
 						<integer>2</integer>
 						<key>MouseMultiplierY</key>
@@ -391,8 +455,6 @@
 						<integer>2</integer>
 						<key>MouseScrollMultiplierY</key>
 						<integer>2</integer>
-						<key>PalmNoAction When Typing</key>
-						<true/>
 						<key>ScrollResolution</key>
 						<integer>800</integer>
 						<key>Thinkpad</key>
@@ -400,27 +462,17 @@
 					</dict>
 					<key>Thinkpad_TrackPad</key>
 					<dict>
-						<key>DynamicEWMode</key>
-						<false/>
 						<key>FakeMiddleButton</key>
 						<false/>
 						<key>FingerZ</key>
 						<integer>47</integer>
 						<key>HWResetOnStart</key>
 						<true/>
-						<key>MaxTapTime</key>
-						<integer>100000000</integer>
-						<key>PalmNoAction When Typing</key>
-						<true/>
 						<key>Resolution</key>
 						<integer>3200</integer>
 						<key>ScrollResolution</key>
 						<integer>800</integer>
-						<key>SmoothInput</key>
-						<true/>
 						<key>Thinkpad</key>
-						<true/>
-						<key>UnsmoothInput</key>
 						<true/>
 					</dict>
 					<key>X1CG3</key>
@@ -435,8 +487,12 @@
 			<integer>1452</integer>
 		</dict>
 	</dict>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.11</string>
 	<key>OSBundleLibraries</key>
 	<dict>
+		<key>as.acidanthera.voodoo.driver.PS2Controller</key>
+		<string>2.2.7</string>
 		<key>com.apple.iokit.IOHIDFamily</key>
 		<string>1.0.0b1</string>
 		<key>com.apple.kpi.iokit</key>
@@ -445,12 +501,8 @@
 		<string>9.0.0</string>
 		<key>com.apple.kpi.mach</key>
 		<string>9.0.0</string>
-		<key>org.rehabman.voodoo.driver.PS2Controller</key>
-		<string>2.0.1</string>
 	</dict>
 	<key>OSBundleRequired</key>
 	<string>Console</string>
-	<key>Source Code</key>
-	<string>https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller</string>
 </dict>
 </plist>

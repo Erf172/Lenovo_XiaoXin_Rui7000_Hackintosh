@@ -4,19 +4,19 @@
 <dict>
 	<key>ACPI</key>
 	<dict>
+		<key>#Comment-DisabledAML</key>
+		<string>Disable other forms of CPU PM due to SSDT/Generate/PluginType=true</string>
 		<key>AutoMerge</key>
 		<true/>
-		<key>Comment-DisabledAML</key>
-		<string>Disable other forms of CPU PM due to SSDT/Generate/PluginType=true</string>
 		<key>DSDT</key>
 		<dict>
-			<key>Debug</key>
+			<key>#DropOEM_DSM</key>
 			<false/>
-			<key>DropOEM_DSM</key>
+			<key>Debug</key>
 			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>Comment-IRQ Fix</key>
+				<key>#Comment-IRQ Fix</key>
 				<string>The following fixes may be needed for onboard audio/USB/etc</string>
 				<key>FixHPET</key>
 				<false/>
@@ -215,10 +215,6 @@
 		<array>
 			<dict>
 				<key>Signature</key>
-				<string>#MCFG</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
 				<string>DMAR</string>
 			</dict>
 			<dict>
@@ -247,33 +243,33 @@
 	<dict>
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
+		<key>#WhiteList</key>
+		<array>
+			<string></string>
+			<string></string>
+		</array>
 		<key>Arguments</key>
-		<string>nv_disable=1 dart=0 -cdfon arch=x86_64 -igfxnohdmi lilucpu=9 slide=0 -igfxhdmidivs</string>
+		<string>nv_disable=1 dart=0 -cdfon arch=x86_64 -igfxnohdmi lilucpu=9 slide=0 brcmfx-aspm vsmcgen=1 shikigva=80 brcmfx-country=#a</string>
 		<key>NeverHibernate</key>
 		<false/>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
 		<integer>5</integer>
-		<key>WhiteList</key>
-		<array>
-			<string></string>
-			<string></string>
-		</array>
+		<key>XMPDetection</key>
+		<integer>-1</integer>
 	</dict>
 	<key>CPU</key>
 	<dict>
 		<key>HWPEnable</key>
 		<true/>
 	</dict>
-	<key>Comment</key>
-	<string>This file is for 10.12.6+ with native KabyLake support</string>
 	<key>Devices</key>
 	<dict>
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<string>No</string>
+			<integer>16</integer>
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
@@ -309,16 +305,12 @@
 				<data>AQAAAA==</data>
 				<key>enable-hdmi20</key>
 				<data>AQAAAA==</data>
+				<key>framebuffer-con1-alldata</key>
+				<data>AQUKAAAIAACHAQAAAgQKAAAIAACHAQAA/wAAAAEAAAAgAAAA</data>
 				<key>framebuffer-con1-enable</key>
-				<integer>1</integer>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con1-type</key>
 				<data>AAgAAA==</data>
-				<key>framebuffer-con1-flags</key>
-				<data>hwEAAA==</data>
-				<key>framebuffer-con1-pipe</key>
-				<data>EgAAAA==</data>
-				<key>framebuffer-con1-alldata</key>
-				<data>AQUKAAAIAACHAQAAAwYKAAAEAACHAQAA/wAAAAEAAAAgAAAA</data>
 				<key>framebuffer-fbmem</key>
 				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
@@ -343,41 +335,16 @@
 		<key>UseIntelHDMI</key>
 		<false/>
 	</dict>
+	<key>DisableDrivers</key>
+	<array>
+		<string>VBoxHfs</string>
+	</array>
 	<key>GUI</key>
 	<dict>
 		<key>#ScreenResolution</key>
 		<string>1920x1080</string>
-		<key>Custom</key>
-		<dict>
-			<key>Entries</key>
-			<array>
-				<dict>
-					<key>Disabled</key>
-					<false/>
-					<key>Hidden</key>
-					<false/>
-					<key>Ignore</key>
-					<false/>
-					<key>NoCaches</key>
-					<false/>
-					<key>Type</key>
-					<string>OSXRecovery</string>
-				</dict>
-				<dict>
-					<key>Disabled</key>
-					<false/>
-					<key>Ignore</key>
-					<false/>
-					<key>Title</key>
-					<string>Windows</string>
-					<key>Type</key>
-					<string>Windows</string>
-				</dict>
-			</array>
-		</dict>
 		<key>Hide</key>
 		<array>
-			<string>Preboot</string>
 			<string>Recovery</string>
 		</array>
 		<key>Mouse</key>
@@ -389,17 +356,13 @@
 		<dict>
 			<key>Entries</key>
 			<true/>
-			<key>Legacy</key>
-			<false/>
 			<key>Linux</key>
 			<true/>
 			<key>Tool</key>
 			<true/>
 		</dict>
-		<key>ScreenResolution</key>
-		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>MinimalDark</string>
+		<string>SimpleThemeDark</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -501,6 +464,21 @@
 			</dict>
 		</array>
 	</dict>
+	<key>Quirks</key>
+	<dict>
+		<key>AvoidRuntimeDefrag</key>
+		<true/>
+		<key>EnableSafeModeSlide</key>
+		<true/>
+		<key>EnableWriteUnprotector</key>
+		<true/>
+		<key>ProtectMemoryRegions</key>
+		<true/>
+		<key>ProvideCustomSlide</key>
+		<true/>
+		<key>SetupVirtualMap</key>
+		<true/>
+	</dict>
 	<key>RtVariables</key>
 	<dict>
 		<key>BooterConfig</key>
@@ -535,7 +513,7 @@
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>EfiVersion</key>
-		<string>184.0.0.0.0</string>
+		<string>429.140.8.0.0</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
 		<key>FirmwareFeatures</key>
@@ -569,7 +547,7 @@
 		<key>CustomUUID</key>
 		<string>82299559-3EBA-5AF0-A143-B2E7432FF6E4</string>
 		<key>InjectKexts</key>
-		<string>Yes</string>
+		<true/>
 	</dict>
 </dict>
 </plist>
